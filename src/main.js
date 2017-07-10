@@ -1,22 +1,15 @@
-
 import Vue from 'vue'
 
-import VueRouter from 'vue-router'
-
 import App from './App'
+import router from './router'
 
-
-Vue.use(VueRouter)
 new Vue({
+  router,
   el:'#app',
-  template:'<App/>',
+  template:'<App />',
   components:{App}
 })
-var router=new VueRouter({
 
-})
-
-router.start(App,'#app')
 
 
 
